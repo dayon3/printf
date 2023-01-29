@@ -15,6 +15,8 @@ int (*convert(const char *specifier))(va_list, buffer_t *)
 		{'c', convert_c},
 		{'s', convert_s},
 		{'%', convert_percent},
+		{'d', convert_di},
+		{'i', convert_di},
 		{0, NULL}
 	};
 

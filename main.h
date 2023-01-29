@@ -34,6 +34,7 @@ int _printf(const char *format, ...);
 /* Conversion Functions */
 int convert_c(va_list args, buffer_t *output);
 int convert_s(va_list args, buffer_t *output);
+int convert_di(va_list args, buffer_t *output);
 int convert_percent(va_list args, buffer_t *output);
 
 /* Helper Functions */

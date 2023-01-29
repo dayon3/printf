@@ -8,12 +8,12 @@
  * Return: If a conversion function is matched - a pointer to the function.
  *         Otherwise - NULL.
  */
-void (*convert(const char *specifier))(va_list, buffer_t *)
+int (*convert(const char *specifier))(va_list, buffer_t *)
 {
 	int i;
 	converter_t converters[] = {
 		{'c', convert_c},
-		{'s', convert_S},
+		{'s', convert_s},
 		{'%', convert_percent},
 		{0, NULL}
 	};

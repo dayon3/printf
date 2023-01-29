@@ -41,5 +41,7 @@ int convert_percent(va_list args, buffer_t *output);
 void init_buffer(buffer_t *output);
 int (*convert(const char *specifier))(va_list, buffer_t *);
 int _memcpy(buffer_t *output, char *src, unsigned int n);
+int convert_sbase(buffer_t *output, int num, char *base);
+int convert_ubase(buffer_t *output, unsigned long int num, char *base);
 
 #endif
